@@ -1,0 +1,315 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPFront Notification Bar\n"
+"POT-Creation-Date: 2014-01-01 06:51-0700\n"
+"PO-Revision-Date: 2014-01-01 06:53-0700\n"
+"Last-Translator: \n"
+"Language-Team: WPFront <contact@wpfront.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/class-wpfront-scroll-top-options.php:41
+msgid "Enabled"
+msgstr "Enabled"
+
+#: ../classes/class-wpfront-scroll-top-options.php:42
+msgid "Scroll Offset"
+msgstr "Scroll Offset"
+
+#: ../classes/class-wpfront-scroll-top-options.php:45
+msgid "Button Opacity"
+msgstr "Button Opacity"
+
+#: ../classes/class-wpfront-scroll-top-options.php:46
+msgid "Button Fade Duration"
+msgstr "Button Fade Duration"
+
+#: ../classes/class-wpfront-scroll-top-options.php:47
+msgid "Scroll Duration"
+msgstr "Scroll Duration"
+
+#: ../classes/class-wpfront-scroll-top-options.php:49
+#: ../templates/options-template.php:107
+msgid "Location"
+msgstr "Location"
+
+#: ../classes/class-wpfront-scroll-top-options.php:50
+msgid "Margin X"
+msgstr "Margin X"
+
+#: ../classes/class-wpfront-scroll-top-options.php:51
+msgid "Margin Y"
+msgstr "Margin Y"
+
+#: ../classes/class-wpfront-scroll-top.php:114
+msgid "WPFront Scroll Top"
+msgstr "WPFront Scroll Top"
+
+#: ../classes/class-wpfront-scroll-top.php:114
+msgid "Scroll Top"
+msgstr "Scroll Top"
+
+#: ../classes/class-wpfront-scroll-top.php:143
+msgid "You do not have sufficient permissions to access this page."
+msgstr "You do not have sufficient permissions to access this page."
+
+#: ../classes/class-wpfront-scroll-top.php:153
+msgid "Settings"
+msgstr "Settings"
+
+#: ../classes/class-wpfront-scroll-top.php:209
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: ../templates/options-template.php:34
+msgid "WPFront Scroll Top Settings"
+msgstr "WPFront Scroll Top Settings"
+
+#: ../templates/options-template.php:44
+msgid ""
+"If you have a caching plugin, clear the cache for the new settings to take "
+"effect."
+msgstr ""
+"If you have a caching plugin, clear the cache for the new settings to take "
+"effect."
+
+#: ../templates/options-template.php:49
+msgid "Display"
+msgstr "Display"
+
+#: ../templates/options-template.php:65
+msgid "[Number of pixels to be scrolled before the button appears.]"
+msgstr "[Number of pixels to be scrolled before the button appears.]"
+
+#: ../templates/options-template.php:70
+msgid "Button Size"
+msgstr "Button Size"
+
+#: ../templates/options-template.php:76
+msgid "[Set 0px to auto fit.]"
+msgstr "[Set 0px to auto fit.]"
+
+#: ../templates/options-template.php:94
+msgid "[Button fade duration in milliseconds.]"
+msgstr "[Button fade duration in milliseconds.]"
+
+#: ../templates/options-template.php:103
+msgid "[Window scroll duration in milliseconds.]"
+msgstr "[Window scroll duration in milliseconds.]"
+
+#: ../templates/options-template.php:115
+msgid "Bottom Right"
+msgstr "Bottom Right"
+
+#: ../templates/options-template.php:116
+msgid "Bottom Left"
+msgstr "Bottom Left"
+
+#: ../templates/options-template.php:117
+msgid "Top Right"
+msgstr "Top Right"
+
+#: ../templates/options-template.php:118
+msgid "Top Left"
+msgstr "Top Left"
+
+#: ../templates/options-template.php:128 ../templates/options-template.php:137
+msgid "[Negative value allowed.]"
+msgstr "[Negative value allowed.]"
+
+#: ../templates/options-template.php:141
+msgid "Image"
+msgstr "Image"
+
+#: ../templates/options-template.php:157
+msgid "Custom URL"
+msgstr "Custom URL"
+
+#~ msgid "Bar Height"
+#~ msgstr "Bar Height"
+
+#~ msgid "Message Text"
+#~ msgstr "Message Text"
+
+#~ msgid "Display After"
+#~ msgstr "Display After"
+
+#~ msgid "Display Close Button"
+#~ msgstr "Display Close Button"
+
+#~ msgid "Auto Close After"
+#~ msgstr "Auto Close After"
+
+#~ msgid "Display Button"
+#~ msgstr "Display Button"
+
+#~ msgid "Open URL:"
+#~ msgstr "Open URL:"
+
+#~ msgid "Open URL in new tab/window"
+#~ msgstr "Open URL in new tab/window"
+
+#~ msgid "Execute JavaScript"
+#~ msgstr "Execute JavaScript"
+
+#~ msgid "Close Bar on Button Click"
+#~ msgstr "Close Bar on Button Click"
+
+#~ msgid "Display Shadow"
+#~ msgstr "Display Shadow"
+
+#~ msgid "Fixed at Position"
+#~ msgstr "Fixed at Position"
+
+#~ msgid "Message Text Color"
+#~ msgstr "Message Text Color"
+
+#~ msgid "From Color"
+#~ msgstr "From Color"
+
+#~ msgid "To Color"
+#~ msgstr "To Color"
+
+#~ msgid "Button Text Color"
+#~ msgstr "Button Text Color"
+
+#~ msgid "Display on Pages"
+#~ msgstr "Display on Pages"
+
+#~ msgid "Display Reopen Button"
+#~ msgstr "Display Reopen Button"
+
+#~ msgid "Reopen Button Color"
+#~ msgstr "Reopen Button Color"
+
+#~ msgid "Keep Closed"
+#~ msgstr "Keep Closed"
+
+#~ msgid "Position Offset"
+#~ msgstr "Position Offset"
+
+#~ msgid "WPFront Notification Bar"
+#~ msgstr "WPFront Notification Bar"
+
+#~ msgid "Notification Bar"
+#~ msgstr "Notification Bar"
+
+#~ msgid "[Page]"
+#~ msgstr "[Page]"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "[Post]"
+#~ msgstr "[Post]"
+
+#~ msgid "Top"
+#~ msgstr "Top"
+
+#~ msgid "[Sticky Bar, bar will stay at position regardless of scrolling.]"
+#~ msgstr "[Sticky Bar, bar will stay at position regardless of scrolling.]"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid ""
+#~ "(Top bar only) If you find the bar overlapping, try increasing this "
+#~ "value. (eg. WordPress 3.8 Twenty Fourteen theme, set 48px)"
+#~ msgstr ""
+#~ "(Top bar only) If you find the bar overlapping, try increasing this "
+#~ "value. (eg. WordPress 3.8 Twenty Fourteen theme, set 48px)"
+
+#~ msgid "second(s)"
+#~ msgstr "second(s)"
+
+#~ msgid "Set 0 second(s) to display immediately."
+#~ msgstr "Set 0 second(s) to display immediately."
+
+#~ msgid "Set 0 second(s) for no animation."
+#~ msgstr "Set 0 second(s) for no animation."
+
+#~ msgid "[Displays a close button at the top right corner of the bar.]"
+#~ msgstr "[Displays a close button at the top right corner of the bar.]"
+
+#~ msgid "Set 0 second(s) to disable auto close."
+#~ msgstr "Set 0 second(s) to disable auto close."
+
+#~ msgid "A reopen button will be displayed after the bar is closed."
+#~ msgstr "A reopen button will be displayed after the bar is closed."
+
+#~ msgid "Once closed, bar will display closed on other pages."
+#~ msgstr "Once closed, bar will display closed on other pages."
+
+#~ msgid "Content"
+#~ msgstr "Content"
+
+#~ msgid "[HTML tags are allowed. e.g. Add <br /> for break.]"
+#~ msgstr "[HTML tags are allowed. e.g. Add <br /> for break.]"
+
+#~ msgid "[Displays a button next to the message.]"
+#~ msgstr "[Displays a button next to the message.]"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "All pages."
+#~ msgstr "All pages."
+
+#~ msgid "Only in landing page."
+#~ msgstr "Only in landing page."
+
+#~ msgid "[The first page they visit on your website.]"
+#~ msgstr "[The first page they visit on your website.]"
+
+#~ msgid "Include in following pages"
+#~ msgstr "Include in following pages"
+
+#~ msgid "Exclude in following pages"
+#~ msgstr "Exclude in following pages"
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "Bar Color"
+#~ msgstr "Bar Color"
+
+#~ msgid "[Select two different colors to create a gradient.]"
+#~ msgstr "[Select two different colors to create a gradient.]"
+
+#~ msgid "Button Color"
+#~ msgstr "Button Color"
+
+#~ msgid "Plugin Ideas"
+#~ msgstr "Plugin Ideas"
+
+#~ msgid "Settings Description"
+#~ msgstr "Settings Description"
+
+#~ msgid "Plugin FAQ"
+#~ msgstr "Plugin FAQ"
+
+#~ msgid "Feature Request"
+#~ msgstr "Feature Request"
+
+#~ msgid "Report Bug"
+#~ msgstr "Report Bug"
+
+#~ msgid "Write Review"
+#~ msgstr "Write Review"
+
+#~ msgid "Contact Me (syam@wpfront.com)"
+#~ msgstr "Contact Me (syam@wpfront.com)"
+
+#~ msgid "Animate Display"
+#~ msgstr "Animate Display"
+
+#~ msgid "Animate Display Delay"
+#~ msgstr "Animate Display Delay"
