@@ -35,7 +35,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top {
 
         //Constants
-        const VERSION = '1.0';
+        const VERSION = '1.0.1';
         const OPTIONSPAGE_SLUG = 'wpfront-scroll-top';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';

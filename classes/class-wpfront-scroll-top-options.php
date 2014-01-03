@@ -47,8 +47,8 @@ if (!class_exists('WPFront_Scroll_Top_Options')) {
             $this->addOption('scroll_duration', 'int', 400, array($this, 'validate_zero_positive'))->__('Scroll Duration');
             
             $this->addOption('location', 'int', 1, array($this, 'validate_range_1_4'))->__('Location');
-            $this->addOption('marginX', 'int', 20, array($this, 'validate_zero_positive'))->__('Margin X');
-            $this->addOption('marginY', 'int', 20, array($this, 'validate_zero_positive'))->__('Margin Y');
+            $this->addOption('marginX', 'int', 20)->__('Margin X');
+            $this->addOption('marginY', 'int', 20)->__('Margin Y');
             
             $this->addOption('image', 'string', '1.png');
             $this->addOption('custom_url', 'string', '');
