@@ -35,7 +35,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top {
 
         //Constants
-        const VERSION = '1.0.1';
+        const VERSION = '1.1';
         const OPTIONSPAGE_SLUG = 'wpfront-scroll-top';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';
@@ -173,7 +173,15 @@ if (!class_exists('WPFront_Scroll_Top')) {
             if ($this->scriptLoaded != TRUE) {
                 return;
             }
+            
+            if (defined('DOING_AJAX') && DOING_AJAX) {
+                return;
+            }
 
+            if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+                return;
+            }
+            
             if ($this->enabled()) {
                 include($this->pluginDIRRoot . 'templates/scroll-top-template.php');
 

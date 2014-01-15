@@ -4,7 +4,7 @@ Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.0.1
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,6 +42,10 @@ No one has asked anything yet.
 
 == Changelog ==
 
+= 1.1 =
+* New option to hide on mobile devices
+* Fixed conflicts with other plugins
+
 = 1.0.1 =
 * Bug fixes
 
@@ -49,6 +53,10 @@ No one has asked anything yet.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1 =
+* New option to hide on mobile devices
+* Fixed conflicts with other plugins
 
 = 1.0.1 =
 * Bug fixes

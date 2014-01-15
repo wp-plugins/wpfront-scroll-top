@@ -29,4 +29,32 @@
  */
 ?>
 
+<?php if ($this->options->hide_small_window()) { ?>
+    <style type="text/css">
+
+        @media screen and (max-width: <?php echo $this->options->small_window_width() . "px"; ?>) {
+
+            #wpfront-scroll-top-container {
+                visibility: hidden;
+            }
+
+        }
+
+    </style>
+<?php } ?>
+
+<?php if ($this->options->hide_small_device()) { ?>
+    <style type="text/css">
+
+        @media screen and (max-device-width: <?php echo $this->options->small_device_width() . "px"; ?>) {
+
+            #wpfront-scroll-top-container {
+                visibility: hidden;
+            }
+
+        }
+
+    </style>
+<?php } ?>
+
 <div id="wpfront-scroll-top-container"><img src="<?php echo $this->image(); ?>" /></div>

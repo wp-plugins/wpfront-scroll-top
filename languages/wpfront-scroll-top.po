@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPFront Notification Bar\n"
-"POT-Creation-Date: 2014-01-01 06:51-0700\n"
-"PO-Revision-Date: 2014-01-01 06:53-0700\n"
+"POT-Creation-Date: 2014-01-15 10:08-0700\n"
+"PO-Revision-Date: 2014-01-15 10:08-0700\n"
 "Last-Translator: \n"
 "Language-Team: WPFront <contact@wpfront.com>\n"
 "Language: en\n"
@@ -36,16 +36,32 @@ msgstr "Button Fade Duration"
 msgid "Scroll Duration"
 msgstr "Scroll Duration"
 
+#: ../classes/class-wpfront-scroll-top-options.php:48
+msgid "Hide on Small Devices"
+msgstr "Hide on Small Devices"
+
 #: ../classes/class-wpfront-scroll-top-options.php:49
-#: ../templates/options-template.php:107
+msgid "Small Device Max Width"
+msgstr "Small Device Max Width"
+
+#: ../classes/class-wpfront-scroll-top-options.php:50
+msgid "Hide on Small Window"
+msgstr "Hide on Small Window"
+
+#: ../classes/class-wpfront-scroll-top-options.php:51
+msgid "Small Window Max Width"
+msgstr "Small Window Max Width"
+
+#: ../classes/class-wpfront-scroll-top-options.php:53
+#: ../templates/options-template.php:143
 msgid "Location"
 msgstr "Location"
 
-#: ../classes/class-wpfront-scroll-top-options.php:50
+#: ../classes/class-wpfront-scroll-top-options.php:54
 msgid "Margin X"
 msgstr "Margin X"
 
-#: ../classes/class-wpfront-scroll-top-options.php:51
+#: ../classes/class-wpfront-scroll-top-options.php:55
 msgid "Margin Y"
 msgstr "Margin Y"
 
@@ -65,7 +81,7 @@ msgstr "You do not have sufficient permissions to access this page."
 msgid "Settings"
 msgstr "Settings"
 
-#: ../classes/class-wpfront-scroll-top.php:209
+#: ../classes/class-wpfront-scroll-top.php:217
 msgid "Save Changes"
 msgstr "Save Changes"
 
@@ -105,33 +121,73 @@ msgstr "[Button fade duration in milliseconds.]"
 msgid "[Window scroll duration in milliseconds.]"
 msgstr "[Window scroll duration in milliseconds.]"
 
-#: ../templates/options-template.php:115
+#: ../templates/options-template.php:112
+msgid "[Button will be hidden on small devices when the width matches.]"
+msgstr "[Button will be hidden on small devices when the width matches.]"
+
+#: ../templates/options-template.php:121
+msgid "[Button will be hidden on devices with lesser or equal width.]"
+msgstr "[Button will be hidden on devices with lesser or equal width.]"
+
+#: ../templates/options-template.php:130
+msgid "[Button will be hidden on broswer window when the width matches.]"
+msgstr "[Button will be hidden on broswer window when the width matches.]"
+
+#: ../templates/options-template.php:139
+msgid "[Button will be hidden on browser window with lesser or equal width.]"
+msgstr "[Button will be hidden on browser window with lesser or equal width.]"
+
+#: ../templates/options-template.php:151
 msgid "Bottom Right"
 msgstr "Bottom Right"
 
-#: ../templates/options-template.php:116
+#: ../templates/options-template.php:152
 msgid "Bottom Left"
 msgstr "Bottom Left"
 
-#: ../templates/options-template.php:117
+#: ../templates/options-template.php:153
 msgid "Top Right"
 msgstr "Top Right"
 
-#: ../templates/options-template.php:118
+#: ../templates/options-template.php:154
 msgid "Top Left"
 msgstr "Top Left"
 
-#: ../templates/options-template.php:128 ../templates/options-template.php:137
+#: ../templates/options-template.php:164 ../templates/options-template.php:173
 msgid "[Negative value allowed.]"
 msgstr "[Negative value allowed.]"
 
-#: ../templates/options-template.php:141
+#: ../templates/options-template.php:177
 msgid "Image"
 msgstr "Image"
 
-#: ../templates/options-template.php:157
+#: ../templates/options-template.php:193
 msgid "Custom URL"
 msgstr "Custom URL"
+
+#: ../templates/options-template.php:200
+msgid "Settings Description"
+msgstr "Settings Description"
+
+#: ../templates/options-template.php:202
+msgid "Plugin FAQ"
+msgstr "Plugin FAQ"
+
+#: ../templates/options-template.php:204
+msgid "Feature Request"
+msgstr "Feature Request"
+
+#: ../templates/options-template.php:206
+msgid "Report Bug"
+msgstr "Report Bug"
+
+#: ../templates/options-template.php:208
+msgid "Write Review"
+msgstr "Write Review"
+
+#: ../templates/options-template.php:210
+msgid "Contact Me (syam@wpfront.com)"
+msgstr "Contact Me (syam@wpfront.com)"
 
 #~ msgid "Bar Height"
 #~ msgstr "Bar Height"
@@ -289,24 +345,6 @@ msgstr "Custom URL"
 
 #~ msgid "Plugin Ideas"
 #~ msgstr "Plugin Ideas"
-
-#~ msgid "Settings Description"
-#~ msgstr "Settings Description"
-
-#~ msgid "Plugin FAQ"
-#~ msgstr "Plugin FAQ"
-
-#~ msgid "Feature Request"
-#~ msgstr "Feature Request"
-
-#~ msgid "Report Bug"
-#~ msgstr "Report Bug"
-
-#~ msgid "Write Review"
-#~ msgstr "Write Review"
-
-#~ msgid "Contact Me (syam@wpfront.com)"
-#~ msgstr "Contact Me (syam@wpfront.com)"
 
 #~ msgid "Animate Display"
 #~ msgstr "Animate Display"

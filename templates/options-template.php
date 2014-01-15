@@ -103,6 +103,42 @@
                         <span class="description"><?php echo $this->__('[Window scroll duration in milliseconds.]'); ?></span>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row">
+                        <?php echo $this->options->hide_small_device_label(); ?>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="<?php echo $this->options->hide_small_device_name(); ?>" <?php echo $this->options->hide_small_device() ? "checked" : ""; ?> />
+                        <span class="description"><?php echo $this->__('[Button will be hidden on small devices when the width matches.]'); ?></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <?php echo $this->options->small_device_width_label(); ?>
+                    </th>
+                    <td>
+                        <input class="pixels" name="<?php echo $this->options->small_device_width_name(); ?>" value="<?php echo $this->options->small_device_width(); ?>" />px 
+                        <span class="description"><?php echo $this->__('[Button will be hidden on devices with lesser or equal width.]'); ?></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <?php echo $this->options->hide_small_window_label(); ?>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="<?php echo $this->options->hide_small_window_name(); ?>" <?php echo $this->options->hide_small_window() ? "checked" : ""; ?> />
+                        <span class="description"><?php echo $this->__('[Button will be hidden on broswer window when the width matches.]'); ?></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <?php echo $this->options->small_window_width_label(); ?>
+                    </th>
+                    <td>
+                        <input class="pixels" name="<?php echo $this->options->small_window_width_name(); ?>" value="<?php echo $this->options->small_window_width(); ?>" />px 
+                        <span class="description"><?php echo $this->__('[Button will be hidden on browser window with lesser or equal width.]'); ?></span>
+                    </td>
+                </tr>
             </table>
             <h3><?php echo $this->__('Location'); ?></h3>
             <table class="form-table">

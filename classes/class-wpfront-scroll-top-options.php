@@ -45,6 +45,10 @@ if (!class_exists('WPFront_Scroll_Top_Options')) {
             $this->addOption('button_opacity', 'int', 80, array($this, 'validate_range_0_100'))->__('Button Opacity');
             $this->addOption('button_fade_duration', 'int', 200, array($this, 'validate_zero_positive'))->__('Button Fade Duration');
             $this->addOption('scroll_duration', 'int', 400, array($this, 'validate_zero_positive'))->__('Scroll Duration');
+            $this->addOption('hide_small_device', 'bit', FALSE)->__('Hide on Small Devices');
+            $this->addOption('small_device_width', 'int', 640, array($this, 'validate_zero_positive'))->__('Small Device Max Width');
+            $this->addOption('hide_small_window', 'bit', FALSE)->__('Hide on Small Window');
+            $this->addOption('small_window_width', 'int', 640, array($this, 'validate_zero_positive'))->__('Small Window Max Width');
             
             $this->addOption('location', 'int', 1, array($this, 'validate_range_1_4'))->__('Location');
             $this->addOption('marginX', 'int', 20)->__('Margin X');
