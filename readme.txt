@@ -17,6 +17,7 @@ Allows the visitor to easily scroll back to the top of the page, with fully cust
 * Displays a button when user scrolls down the page.
 * Scrolls the page back to top with animation.
 * Set any image you want.
+* Hide on small devices.
 
 == Installation ==
 
