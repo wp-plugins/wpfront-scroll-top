@@ -1,20 +1,150 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPFront Notification Bar\n"
-"POT-Creation-Date: 2014-01-15 10:08-0700\n"
-"PO-Revision-Date: 2014-01-15 10:08-0700\n"
+"POT-Creation-Date: 2014-02-23 11:53-0700\n"
+"PO-Revision-Date: 2014-02-23 11:53-0700\n"
 "Last-Translator: \n"
 "Language-Team: WPFront <contact@wpfront.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.1\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/base/class-wpfront-base-menu.php:52
+#: ../classes/base/class-wpfront-base-menu.php:62
+msgid "Name"
+msgstr "Name"
+
+#: ../classes/base/class-wpfront-base-menu.php:53
+#: ../classes/base/class-wpfront-base-menu.php:63
+msgid "Version"
+msgstr "Version"
+
+#: ../classes/base/class-wpfront-base-menu.php:54
+#: ../classes/base/class-wpfront-base-menu.php:64
+msgid "Rating"
+msgstr "Rating"
+
+#: ../classes/base/class-wpfront-base-menu.php:55
+#: ../classes/base/class-wpfront-base-menu.php:65
+msgid "Description"
+msgstr "Description"
+
+#: ../classes/base/class-wpfront-base-menu.php:75
+#, php-format
+msgid "based on %s rating(s)"
+msgstr "based on %s rating(s)"
+
+#: ../classes/base/class-wpfront-base-menu.php:111
+msgid "Unable to communicate with WordPress.org"
+msgstr "Unable to communicate with WordPress.org"
+
+#: ../classes/base/class-wpfront-base-menu.php:145
+#, php-format
+msgid "By %s"
+msgstr "By %s"
+
+#: ../classes/base/class-wpfront-base-menu.php:152
+#, php-format
+msgid "More information about %s"
+msgstr "More information about %s"
+
+#: ../classes/base/class-wpfront-base-menu.php:152
+msgid "Details"
+msgstr "Details"
+
+#: ../classes/base/class-wpfront-base-menu.php:161
+#, php-format
+msgid "Install %s"
+msgstr "Install %s"
+
+#: ../classes/base/class-wpfront-base-menu.php:161
+msgid "Install Now"
+msgstr "Install Now"
+
+#: ../classes/base/class-wpfront-base-menu.php:166
+#, php-format
+msgid "Update to version %s"
+msgstr "Update to version %s"
+
+#: ../classes/base/class-wpfront-base-menu.php:166
+msgid "Update Now"
+msgstr "Update Now"
+
+#: ../classes/base/class-wpfront-base-menu.php:171
+msgid "This plugin is already installed and is up to date"
+msgstr "This plugin is already installed and is up to date"
+
+#: ../classes/base/class-wpfront-base-menu.php:171
+msgid "Installed"
+msgstr "Installed"
+
+#: ../classes/base/class-wpfront-base-menu.php:173
+#: ../classes/base/class-wpfront-base.php:105
+msgid "Settings"
+msgstr "Settings"
+
+#: ../classes/base/class-wpfront-base-menu.php:175
+msgid "Activate"
+msgstr "Activate"
+
+#: ../classes/base/class-wpfront-base-menu.php:213
+msgid "WPFront"
+msgstr "WPFront"
+
+#: ../classes/base/class-wpfront-base-menu.php:214
+msgid "WPFront Plugins"
+msgstr "WPFront Plugins"
+
+#: ../classes/base/class-wpfront-base-menu.php:214
+msgid "All Plugins"
+msgstr "All Plugins"
+
+#: ../classes/base/class-wpfront-base.php:130
+msgid "You do not have sufficient permissions to access this page."
+msgstr "You do not have sufficient permissions to access this page."
+
+#: ../classes/base/class-wpfront-base.php:150
+msgid ""
+"If you have a caching plugin, clear the cache for the new settings to take "
+"effect."
+msgstr ""
+"If you have a caching plugin, clear the cache for the new settings to take "
+"effect."
+
+#: ../classes/base/class-wpfront-base.php:168
+msgid "Settings Description"
+msgstr "Settings Description"
+
+#: ../classes/base/class-wpfront-base.php:170
+msgid "Plugin FAQ"
+msgstr "Plugin FAQ"
+
+#: ../classes/base/class-wpfront-base.php:172
+msgid "Feature Request"
+msgstr "Feature Request"
+
+#: ../classes/base/class-wpfront-base.php:174
+msgid "Report Bug"
+msgstr "Report Bug"
+
+#: ../classes/base/class-wpfront-base.php:176
+msgid "Write Review"
+msgstr "Write Review"
+
+#: ../classes/base/class-wpfront-base.php:178
+msgid "Contact Me (syam@wpfront.com)"
+msgstr "Contact Me (syam@wpfront.com)"
+
+#: ../classes/base/class-wpfront-base.php:195
+msgid "Save Changes"
+msgstr "Save Changes"
 
 #: ../classes/class-wpfront-scroll-top-options.php:41
 msgid "Enabled"
@@ -53,7 +183,7 @@ msgid "Small Window Max Width"
 msgstr "Small Window Max Width"
 
 #: ../classes/class-wpfront-scroll-top-options.php:53
-#: ../templates/options-template.php:143
+#: ../templates/options-template.php:129
 msgid "Location"
 msgstr "Location"
 
@@ -65,129 +195,85 @@ msgstr "Margin X"
 msgid "Margin Y"
 msgstr "Margin Y"
 
-#: ../classes/class-wpfront-scroll-top.php:114
+#: ../classes/class-wpfront-scroll-top.php:63
 msgid "WPFront Scroll Top"
 msgstr "WPFront Scroll Top"
 
-#: ../classes/class-wpfront-scroll-top.php:114
+#: ../classes/class-wpfront-scroll-top.php:63
 msgid "Scroll Top"
 msgstr "Scroll Top"
 
-#: ../classes/class-wpfront-scroll-top.php:143
-msgid "You do not have sufficient permissions to access this page."
-msgstr "You do not have sufficient permissions to access this page."
-
-#: ../classes/class-wpfront-scroll-top.php:153
-msgid "Settings"
-msgstr "Settings"
-
-#: ../classes/class-wpfront-scroll-top.php:217
-msgid "Save Changes"
-msgstr "Save Changes"
-
-#: ../templates/options-template.php:34
+#: ../templates/options-template.php:32
 msgid "WPFront Scroll Top Settings"
 msgstr "WPFront Scroll Top Settings"
 
-#: ../templates/options-template.php:44
-msgid ""
-"If you have a caching plugin, clear the cache for the new settings to take "
-"effect."
-msgstr ""
-"If you have a caching plugin, clear the cache for the new settings to take "
-"effect."
-
-#: ../templates/options-template.php:49
+#: ../templates/options-template.php:34
 msgid "Display"
 msgstr "Display"
 
-#: ../templates/options-template.php:65
+#: ../templates/options-template.php:50
 msgid "[Number of pixels to be scrolled before the button appears.]"
 msgstr "[Number of pixels to be scrolled before the button appears.]"
 
-#: ../templates/options-template.php:70
+#: ../templates/options-template.php:55
 msgid "Button Size"
 msgstr "Button Size"
 
-#: ../templates/options-template.php:76
+#: ../templates/options-template.php:61
 msgid "[Set 0px to auto fit.]"
 msgstr "[Set 0px to auto fit.]"
 
-#: ../templates/options-template.php:94
+#: ../templates/options-template.php:79
 msgid "[Button fade duration in milliseconds.]"
 msgstr "[Button fade duration in milliseconds.]"
 
-#: ../templates/options-template.php:103
+#: ../templates/options-template.php:88
 msgid "[Window scroll duration in milliseconds.]"
 msgstr "[Window scroll duration in milliseconds.]"
 
-#: ../templates/options-template.php:112
+#: ../templates/options-template.php:97
 msgid "[Button will be hidden on small devices when the width matches.]"
 msgstr "[Button will be hidden on small devices when the width matches.]"
 
-#: ../templates/options-template.php:121
+#: ../templates/options-template.php:106
 msgid "[Button will be hidden on devices with lesser or equal width.]"
 msgstr "[Button will be hidden on devices with lesser or equal width.]"
 
-#: ../templates/options-template.php:130
+#: ../templates/options-template.php:115
 msgid "[Button will be hidden on broswer window when the width matches.]"
 msgstr "[Button will be hidden on broswer window when the width matches.]"
 
-#: ../templates/options-template.php:139
+#: ../templates/options-template.php:124
 msgid "[Button will be hidden on browser window with lesser or equal width.]"
 msgstr "[Button will be hidden on browser window with lesser or equal width.]"
 
-#: ../templates/options-template.php:151
+#: ../templates/options-template.php:137
 msgid "Bottom Right"
 msgstr "Bottom Right"
 
-#: ../templates/options-template.php:152
+#: ../templates/options-template.php:138
 msgid "Bottom Left"
 msgstr "Bottom Left"
 
-#: ../templates/options-template.php:153
+#: ../templates/options-template.php:139
 msgid "Top Right"
 msgstr "Top Right"
 
-#: ../templates/options-template.php:154
+#: ../templates/options-template.php:140
 msgid "Top Left"
 msgstr "Top Left"
 
-#: ../templates/options-template.php:164 ../templates/options-template.php:173
+#: ../templates/options-template.php:150 ../templates/options-template.php:159
 msgid "[Negative value allowed.]"
 msgstr "[Negative value allowed.]"
 
-#: ../templates/options-template.php:177
+#: ../templates/options-template.php:164
 msgid "Image"
 msgstr "Image"
 
-#: ../templates/options-template.php:193
+#: ../templates/options-template.php:180
 msgid "Custom URL"
 msgstr "Custom URL"
-
-#: ../templates/options-template.php:200
-msgid "Settings Description"
-msgstr "Settings Description"
-
-#: ../templates/options-template.php:202
-msgid "Plugin FAQ"
-msgstr "Plugin FAQ"
-
-#: ../templates/options-template.php:204
-msgid "Feature Request"
-msgstr "Feature Request"
-
-#: ../templates/options-template.php:206
-msgid "Report Bug"
-msgstr "Report Bug"
-
-#: ../templates/options-template.php:208
-msgid "Write Review"
-msgstr "Write Review"
-
-#: ../templates/options-template.php:210
-msgid "Contact Me (syam@wpfront.com)"
-msgstr "Contact Me (syam@wpfront.com)"
 
 #~ msgid "Bar Height"
 #~ msgstr "Bar Height"
@@ -342,9 +428,6 @@ msgstr "Contact Me (syam@wpfront.com)"
 
 #~ msgid "Button Color"
 #~ msgstr "Button Color"
-
-#~ msgid "Plugin Ideas"
-#~ msgstr "Plugin Ideas"
 
 #~ msgid "Animate Display"
 #~ msgstr "Animate Display"

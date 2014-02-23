@@ -22,7 +22,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-require_once("class-wpfront-options-base.php");
+require_once("base/class-wpfront-options-base.php");
 
 if (!class_exists('WPFront_Scroll_Top_Options')) {
 

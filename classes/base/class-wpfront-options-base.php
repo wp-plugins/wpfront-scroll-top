@@ -1,12 +1,12 @@
 <?php
 
 /*
-  WPFront Scroll Top Plugin
+  WPFront Plugins Options Base
   Copyright (C) 2013, WPFront.com
   Website: wpfront.com
   Contact: syam@wpfront.com
 
-  WPFront Scroll Top Plugin is distributed under the GNU General Public License, Version 3,
+  WPFront Plugins are distributed under the GNU General Public License, Version 3,
   June 2007. Copyright (C) 2007 Free Software Foundation, Inc., 51 Franklin
   St, Fifth Floor, Boston, MA 02110, USA
 
