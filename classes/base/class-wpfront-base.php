@@ -196,6 +196,13 @@ if (!class_exists('WPFront_Base')) {
             }
         }
 
+        public function pluginURL(){
+            return $this->pluginURLRoot;
+        }
+        
+        public function pluginDIR(){
+            return $this->pluginDIRRoot;
+        }
     }
 
 }

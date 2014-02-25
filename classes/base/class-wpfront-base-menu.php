@@ -113,12 +113,20 @@ if (!class_exists('WPFront_Base_Menu')) {
             }
             ?>
             <style type="text/css">
-                table.plugins th.check-column {
+                div.wpfront-container table.plugins {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+                div.wpfront-container table.plugins th.check-column {
                     width: 0px;
+                }
+                div.wpfront-container div.footer {
+                    text-align: center;
                 }
             </style>
             <?php
-            echo '<div class="wrap">';
+            echo '<div class="wrap wpfront-container">';
+            echo '<h2>' . $this->__('WPFront Plugins') . '</h2>';
             echo '<table class="wp-list-table widefat plugins">';
             $this->print_column_headers();
 
@@ -194,6 +202,7 @@ if (!class_exists('WPFront_Base_Menu')) {
 
             $this->print_column_footers();
             echo '</table>';
+            echo '<div class="footer"><a href="http://wpfront.com/contact" target="_blank">' . $this->__('Feedback') . '</a> | <a href="http://wpfront.com" target="_blank">wpfront.com</a></div>';
             echo '</div>';
         }
 
@@ -210,7 +219,7 @@ if (!class_exists('WPFront_Base_Menu')) {
 
             global $admin_page_hooks, $submenu;
             if (!isset($admin_page_hooks[$menu_slug])) {
-                add_menu_page($this->__('WPFront'), $this->__('WPFront'), 'manage_options', $menu_slug, null);
+                add_menu_page($this->__('WPFront'), $this->__('WPFront'), 'manage_options', $menu_slug, null, self::$wpfrontBase->pluginURL() . 'classes/base/images/wpfront_menu.png');
                 add_submenu_page($menu_slug, $this->__('WPFront Plugins'), $this->__('All Plugins'), 'manage_options', $menu_slug, array('WPFront_Base_Menu', 'plugin_list'));
             }
 
