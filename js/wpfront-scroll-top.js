@@ -47,21 +47,29 @@
             data.button_height += "px";
         container.children("img").css({"width": data.button_width, "height": data.button_height});
 
+        var mouse_over = false;
         $(window).scroll(function() {
             if ($(this).scrollTop() > data.scroll_offset) {
-                container.stop().show().fadeTo(data.button_fade_duration, data.button_opacity);
+                container.stop().css("opacity", 1).show();
+                if (!mouse_over)
+                    container.css("opacity", data.button_opacity);
             } else {
-                container.stop().fadeTo(data.button_fade_duration, 0, function() {
-                    container.hide();
-                });
+                if (container.is(":visible")) {
+                    container.stop().fadeTo(data.button_fade_duration, 0, function() {
+                        container.hide();
+                        mouse_over = false;
+                    });
+                }
             }
         });
 
         container
                 .hover(function() {
+                    mouse_over = true;
                     $(this).css("opacity", 1);
                 }, function() {
                     $(this).css("opacity", data.button_opacity);
+                    mouse_over = false;
                 })
                 .click(function() {
                     $("html, body").animate({scrollTop: 0}, data.scroll_duration);

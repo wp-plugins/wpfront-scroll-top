@@ -36,7 +36,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top extends WPFront_Base {
 
         //Constants
-        const VERSION = '1.1.1';
+        const VERSION = '1.2';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';
         const PLUGIN_SLUG = 'wpfront-scroll-top';
@@ -59,7 +59,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
 
             add_action('wp_footer', array(&$this, 'write_markup'));
             add_action('shutdown', array(&$this, 'write_markup'));
-            
+
             $this->add_menu($this->__('WPFront Scroll Top'), $this->__('Scroll Top'));
         }
 
@@ -88,13 +88,23 @@ if (!class_exists('WPFront_Scroll_Top')) {
 
         public function admin_init() {
             register_setting(self::OPTIONS_GROUP_NAME, self::OPTION_NAME);
-            
+
             $this->enqueue_styles();
             $this->enqueue_scripts();
         }
 
+        public function enqueue_options_scripts() {
+            $this->enqueue_scripts();
+
+            $jsRoot = $this->pluginURLRoot . 'jquery-plugins/colorpicker/js/';
+            wp_enqueue_script('jquery.eyecon.colorpicker', $jsRoot . 'colorpicker.js', array('jquery'), self::VERSION);
+        }
+
         //options page styles
         public function enqueue_options_styles() {
+            $styleRoot = $this->pluginURLRoot . 'jquery-plugins/colorpicker/css/';
+            wp_enqueue_style('jquery.eyecon.colorpicker.colorpicker', $styleRoot . 'colorpicker.css', array(), self::VERSION);
+
             $styleRoot = $this->pluginURLRoot . 'css/';
             wp_enqueue_style('wpfront-scroll-top-options', $styleRoot . 'options.css', array(), self::VERSION);
         }
@@ -113,7 +123,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
             if ($this->scriptLoaded != TRUE) {
                 return;
             }
-            
+
             if (WPFront_Static::doing_ajax()) {
                 return;
             }
@@ -145,10 +155,11 @@ if (!class_exists('WPFront_Scroll_Top')) {
         }
 
         private function image() {
-            if($this->options->image() == 'custom')
+            if ($this->options->image() == 'custom')
                 return $this->options->custom_url();
             return $this->iconsURL . $this->options->image();
         }
+
     }
 
 }

@@ -49,41 +49,58 @@ if (!class_exists('WPFront_Scroll_Top_Options')) {
             $this->addOption('small_device_width', 'int', 640, array($this, 'validate_zero_positive'))->__('Small Device Max Width');
             $this->addOption('hide_small_window', 'bit', FALSE)->__('Hide on Small Window');
             $this->addOption('small_window_width', 'int', 640, array($this, 'validate_zero_positive'))->__('Small Window Max Width');
-            
+            $this->addOption('button_style', 'string', 'image', array($this, 'validate_button_style'))->__('Button Style');
+
             $this->addOption('location', 'int', 1, array($this, 'validate_range_1_4'))->__('Location');
             $this->addOption('marginX', 'int', 20)->__('Margin X');
             $this->addOption('marginY', 'int', 20)->__('Margin Y');
-            
+
+            $this->addOption('text_button_text', 'string', '')->__('Text');
+            $this->addOption('text_button_text_color', 'string', '#ffffff', array($this, 'validate_color'))->__('Text Color');
+            $this->addOption('text_button_background_color', 'string', '#000000', array($this, 'validate_color'))->__('Background Color');
+            $this->addOption('text_button_css', 'string', '')->__('Custom CSS');
+
             $this->addOption('image', 'string', '1.png');
             $this->addOption('custom_url', 'string', '');
         }
 
-        protected function validate_zero_positive($arg) {
-            if($arg < 0)
-                return 0;
-            
-            return $arg;
-        }
-        
         protected function validate_range_0_100($arg) {
-            if($arg < 0)
+            if ($arg < 0)
                 return 0;
-            
-            if($arg > 100)
+
+            if ($arg > 100)
                 return 100;
-            
+
             return $arg;
         }
-        
+
         protected function validate_range_1_4($arg) {
-            if($arg < 1)
+            if ($arg < 1)
                 return 1;
-            
-            if($arg > 4)
+
+            if ($arg > 4)
                 return 4;
-            
+
             return $arg;
         }
+
+        protected function validate_button_style($arg) {
+            if ($arg == 'text')
+                return $arg;
+
+            return 'image';
+        }
+
+        protected function validate_color($arg) {
+            if (strlen($arg) != 7)
+                return '#ffffff';
+
+            if (strpos($arg, '#') != 0)
+                return '#ffffff';
+
+            return $arg;
+        }
+
     }
 
 }

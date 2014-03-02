@@ -124,6 +124,60 @@
             <span class="description"><?php echo $this->__('[Button will be hidden on browser window with lesser or equal width.]'); ?></span>
         </td>
     </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->button_style_label(); ?>
+        </th>
+        <td>
+            <div>
+                <label><input type="radio" name="<?php echo $this->options->button_style_name(); ?>" value="image" <?php echo $this->options->button_style() == 'image' ? 'checked' : ''; ?> /> <?php echo $this->__('Image'); ?></label>
+                <br />
+                <label><input type="radio" name="<?php echo $this->options->button_style_name(); ?>" value="text" <?php echo $this->options->button_style() == 'text' ? 'checked' : ''; ?> /> <?php echo $this->__('Text'); ?></label>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h3><?php echo $this->__('Text Button'); ?></h3>
+<table class="form-table">
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->text_button_text_label(); ?>
+        </th>
+        <td>
+            <input name="<?php echo $this->options->text_button_text_name(); ?>" value="<?php echo $this->options->text_button_text(); ?>" />
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->text_button_text_color_label(); ?>
+        </th>
+        <td>
+            <div class="color-selector-div">
+                <div class="color-selector" color="<?php echo $this->options->text_button_text_color(); ?>"></div>&#160;<span><?php echo $this->options->text_button_text_color(); ?></span>
+                <input type="hidden" name="<?php echo $this->options->text_button_text_color_name(); ?>" value="<?php echo $this->options->text_button_text_color(); ?>" />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->text_button_background_color_label(); ?>
+        </th>
+        <td>
+            <div class="color-selector-div">
+                <div class="color-selector" color="<?php echo $this->options->text_button_background_color(); ?>"></div>&#160;<span><?php echo $this->options->text_button_background_color(); ?></span>
+                <input type="hidden" name="<?php echo $this->options->text_button_background_color_name(); ?>" value="<?php echo $this->options->text_button_background_color(); ?>" />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->text_button_css_label(); ?>
+        </th>
+        <td>
+            <textarea name="<?php echo $this->options->text_button_css_name(); ?>" rows="5" cols="50"><?php echo $this->options->text_button_css(); ?></textarea>
+        </td>
+    </tr>
 </table>
 
 <h3><?php echo $this->__('Location'); ?></h3>
@@ -183,4 +237,30 @@
 </div>
 
 <?php @$this->options_page_footer('scroll-top-plugin-settings/', 'scroll-top-plugin-faq/'); ?>
-            
+
+<script type="text/javascript">
+    (function($) {
+        function setColorPicker(div) {
+            div.ColorPicker({
+                color: div.attr('color'),
+                onShow: function(colpkr) {
+                    $(colpkr).fadeIn(500);
+                    return false;
+                }, onHide: function(colpkr) {
+                    $(colpkr).fadeOut(500);
+                    return false;
+                },
+                onChange: function(hsb, hex, rgb) {
+                    div.css('backgroundColor', '#' + hex);
+                    div.next().text('#' + hex).next().val('#' + hex);
+                }
+            }).css('backgroundColor', div.attr('color'));
+        }
+
+        $('#wpfront-scroll-top-options').find(".color-selector").each(function(i, e) {
+            setColorPicker($(e));
+        });
+
+    })(jQuery);
+</script>
+

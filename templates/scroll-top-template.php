@@ -57,4 +57,41 @@
     </style>
 <?php } ?>
 
-<div id="wpfront-scroll-top-container"><img src="<?php echo $this->image(); ?>" /></div>
+<?php
+if ($this->options->button_style() == 'text') {
+    ?>
+    <div id="wpfront-scroll-top-container">
+        <table>
+            <tr>
+                <td class="button-holder" align="center" valign="middle">
+                    <?php echo $this->options->text_button_text(); ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <style type="text/css">
+        #wpfront-scroll-top-container .button-holder {
+            color: <?php echo $this->options->text_button_text_color(); ?>;
+            background-color: <?php echo $this->options->text_button_background_color(); ?>;
+            padding: 3px 10px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+            box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.5);
+            width: <?php echo $this->options->button_width() == 0 ? 'auto' : $this->options->button_width() . 'px'; ?>;
+            height: <?php echo $this->options->button_height() == 0 ? 'auto' : $this->options->button_height() . 'px'; ?>;
+        }
+
+        #wpfront-scroll-top-container .button-holder {
+            <?php echo $this->options->text_button_css(); ?>
+        }
+    </style>
+    <?php
+} else {
+    ?>
+    <div id="wpfront-scroll-top-container"><img src="<?php echo $this->image(); ?>" /></div>
+    <?php
+}
+?>

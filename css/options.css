@@ -39,3 +39,15 @@
     width: 50%;
 }
 
+#wpfront-scroll-top-options table.form-table .color-selector-div
+{
+    display: inline-block;
+    width: 100px;
+}
+
+#wpfront-scroll-top-options table.form-table .color-selector 
+{
+    vertical-align: middle;
+}
+
+

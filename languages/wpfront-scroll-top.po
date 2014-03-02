@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPFront Notification Bar\n"
-"POT-Creation-Date: 2014-02-24 16:43-0700\n"
-"PO-Revision-Date: 2014-02-24 16:43-0700\n"
+"POT-Creation-Date: 2014-03-02 10:49-0700\n"
+"PO-Revision-Date: 2014-03-02 10:49-0700\n"
 "Last-Translator: \n"
 "Language-Team: WPFront <contact@wpfront.com>\n"
 "Language: en\n"
@@ -17,97 +17,93 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../classes/base/class-wpfront-base-menu.php:52
-#: ../classes/base/class-wpfront-base-menu.php:62
 msgid "Name"
 msgstr "Name"
 
 #: ../classes/base/class-wpfront-base-menu.php:53
-#: ../classes/base/class-wpfront-base-menu.php:63
 msgid "Version"
 msgstr "Version"
 
 #: ../classes/base/class-wpfront-base-menu.php:54
-#: ../classes/base/class-wpfront-base-menu.php:64
 msgid "Rating"
 msgstr "Rating"
 
 #: ../classes/base/class-wpfront-base-menu.php:55
-#: ../classes/base/class-wpfront-base-menu.php:65
 msgid "Description"
 msgstr "Description"
 
-#: ../classes/base/class-wpfront-base-menu.php:75
+#: ../classes/base/class-wpfront-base-menu.php:69
 #, php-format
 msgid "based on %s rating(s)"
 msgstr "based on %s rating(s)"
 
-#: ../classes/base/class-wpfront-base-menu.php:111
+#: ../classes/base/class-wpfront-base-menu.php:105
 msgid "Unable to communicate with WordPress.org"
 msgstr "Unable to communicate with WordPress.org"
 
-#: ../classes/base/class-wpfront-base-menu.php:129
-#: ../classes/base/class-wpfront-base-menu.php:223
+#: ../classes/base/class-wpfront-base-menu.php:123
+#: ../classes/base/class-wpfront-base-menu.php:217
 msgid "WPFront Plugins"
 msgstr "WPFront Plugins"
 
-#: ../classes/base/class-wpfront-base-menu.php:153
+#: ../classes/base/class-wpfront-base-menu.php:147
 #, php-format
 msgid "By %s"
 msgstr "By %s"
 
-#: ../classes/base/class-wpfront-base-menu.php:160
+#: ../classes/base/class-wpfront-base-menu.php:154
 #, php-format
 msgid "More information about %s"
 msgstr "More information about %s"
 
-#: ../classes/base/class-wpfront-base-menu.php:160
+#: ../classes/base/class-wpfront-base-menu.php:154
 msgid "Details"
 msgstr "Details"
 
-#: ../classes/base/class-wpfront-base-menu.php:169
+#: ../classes/base/class-wpfront-base-menu.php:163
 #, php-format
 msgid "Install %s"
 msgstr "Install %s"
 
-#: ../classes/base/class-wpfront-base-menu.php:169
+#: ../classes/base/class-wpfront-base-menu.php:163
 msgid "Install Now"
 msgstr "Install Now"
 
-#: ../classes/base/class-wpfront-base-menu.php:174
+#: ../classes/base/class-wpfront-base-menu.php:168
 #, php-format
 msgid "Update to version %s"
 msgstr "Update to version %s"
 
-#: ../classes/base/class-wpfront-base-menu.php:174
+#: ../classes/base/class-wpfront-base-menu.php:168
 msgid "Update Now"
 msgstr "Update Now"
 
-#: ../classes/base/class-wpfront-base-menu.php:179
+#: ../classes/base/class-wpfront-base-menu.php:173
 msgid "This plugin is already installed and is up to date"
 msgstr "This plugin is already installed and is up to date"
 
-#: ../classes/base/class-wpfront-base-menu.php:179
+#: ../classes/base/class-wpfront-base-menu.php:173
 msgid "Installed"
 msgstr "Installed"
 
-#: ../classes/base/class-wpfront-base-menu.php:181
+#: ../classes/base/class-wpfront-base-menu.php:175
 #: ../classes/base/class-wpfront-base.php:105
 msgid "Settings"
 msgstr "Settings"
 
-#: ../classes/base/class-wpfront-base-menu.php:183
+#: ../classes/base/class-wpfront-base-menu.php:177
 msgid "Activate"
 msgstr "Activate"
 
-#: ../classes/base/class-wpfront-base-menu.php:205
+#: ../classes/base/class-wpfront-base-menu.php:199
 msgid "Feedback"
 msgstr "Feedback"
 
-#: ../classes/base/class-wpfront-base-menu.php:222
+#: ../classes/base/class-wpfront-base-menu.php:216
 msgid "WPFront"
 msgstr "WPFront"
 
-#: ../classes/base/class-wpfront-base-menu.php:223
+#: ../classes/base/class-wpfront-base-menu.php:217
 msgid "All Plugins"
 msgstr "All Plugins"
 
@@ -187,18 +183,39 @@ msgstr "Hide on Small Window"
 msgid "Small Window Max Width"
 msgstr "Small Window Max Width"
 
-#: ../classes/class-wpfront-scroll-top-options.php:53
-#: ../templates/options-template.php:129
+#: ../classes/class-wpfront-scroll-top-options.php:52
+msgid "Button Style"
+msgstr "Button Style"
+
+#: ../classes/class-wpfront-scroll-top-options.php:54
+#: ../templates/options-template.php:183
 msgid "Location"
 msgstr "Location"
 
-#: ../classes/class-wpfront-scroll-top-options.php:54
+#: ../classes/class-wpfront-scroll-top-options.php:55
 msgid "Margin X"
 msgstr "Margin X"
 
-#: ../classes/class-wpfront-scroll-top-options.php:55
+#: ../classes/class-wpfront-scroll-top-options.php:56
 msgid "Margin Y"
 msgstr "Margin Y"
+
+#: ../classes/class-wpfront-scroll-top-options.php:58
+#: ../templates/options-template.php:135
+msgid "Text"
+msgstr "Text"
+
+#: ../classes/class-wpfront-scroll-top-options.php:59
+msgid "Text Color"
+msgstr "Text Color"
+
+#: ../classes/class-wpfront-scroll-top-options.php:60
+msgid "Background Color"
+msgstr "Background Color"
+
+#: ../classes/class-wpfront-scroll-top-options.php:61
+msgid "Custom CSS"
+msgstr "Custom CSS"
 
 #: ../classes/class-wpfront-scroll-top.php:63
 msgid "WPFront Scroll Top"
@@ -252,31 +269,35 @@ msgstr "[Button will be hidden on broswer window when the width matches.]"
 msgid "[Button will be hidden on browser window with lesser or equal width.]"
 msgstr "[Button will be hidden on browser window with lesser or equal width.]"
 
-#: ../templates/options-template.php:137
-msgid "Bottom Right"
-msgstr "Bottom Right"
-
-#: ../templates/options-template.php:138
-msgid "Bottom Left"
-msgstr "Bottom Left"
-
-#: ../templates/options-template.php:139
-msgid "Top Right"
-msgstr "Top Right"
-
-#: ../templates/options-template.php:140
-msgid "Top Left"
-msgstr "Top Left"
-
-#: ../templates/options-template.php:150 ../templates/options-template.php:159
-msgid "[Negative value allowed.]"
-msgstr "[Negative value allowed.]"
-
-#: ../templates/options-template.php:164
+#: ../templates/options-template.php:133 ../templates/options-template.php:218
 msgid "Image"
 msgstr "Image"
 
-#: ../templates/options-template.php:180
+#: ../templates/options-template.php:141
+msgid "Text Button"
+msgstr "Text Button"
+
+#: ../templates/options-template.php:191
+msgid "Bottom Right"
+msgstr "Bottom Right"
+
+#: ../templates/options-template.php:192
+msgid "Bottom Left"
+msgstr "Bottom Left"
+
+#: ../templates/options-template.php:193
+msgid "Top Right"
+msgstr "Top Right"
+
+#: ../templates/options-template.php:194
+msgid "Top Left"
+msgstr "Top Left"
+
+#: ../templates/options-template.php:204 ../templates/options-template.php:213
+msgid "[Negative value allowed.]"
+msgstr "[Negative value allowed.]"
+
+#: ../templates/options-template.php:234
 msgid "Custom URL"
 msgstr "Custom URL"
 
@@ -321,9 +342,6 @@ msgstr "Custom URL"
 
 #~ msgid "From Color"
 #~ msgstr "From Color"
-
-#~ msgid "To Color"
-#~ msgstr "To Color"
 
 #~ msgid "Button Text Color"
 #~ msgstr "Button Text Color"
@@ -424,9 +442,6 @@ msgstr "Custom URL"
 
 #~ msgid "Color"
 #~ msgstr "Color"
-
-#~ msgid "Bar Color"
-#~ msgstr "Bar Color"
 
 #~ msgid "[Select two different colors to create a gradient.]"
 #~ msgstr "[Select two different colors to create a gradient.]"
