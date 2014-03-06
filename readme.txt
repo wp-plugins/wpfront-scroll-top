@@ -1,4 +1,4 @@
-=== WPFront Scroll Top ===
+﻿=== WPFront Scroll Top ===
 Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
@@ -19,6 +19,8 @@ Allows the visitor to easily scroll back to the top of the page, with fully cust
 * Create text or image button.
 * Set any image you want.
 * Hide on small devices.
+
+Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-settings/) page for detailed option descriptions.
 
 == Installation ==
 
