@@ -4,7 +4,7 @@ Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,6 +19,9 @@ Allows the visitor to easily scroll back to the top of the page, with fully cust
 * Create text or image button.
 * Set any image you want.
 * Hide on small devices.
+* Hide on iframes.
+* Pages/Posts filter.
+* Auto hide.
 
 Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-settings/) page for detailed option descriptions.
 
@@ -46,6 +49,12 @@ No one has asked anything yet.
 
 == Changelog ==
 
+= 1.3 =
+* Auto hide
+* Hide on wp-admin
+* Hide on iframes
+* Pages/posts filter
+
 = 1.2 =
 * Text button option
 * Bug fixes
@@ -65,6 +74,11 @@ No one has asked anything yet.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Now you can auto hide it
+* Hide on wp-admin/iframes
+* Pages/posts filter added
 
 = 1.2 =
 * Text based button added

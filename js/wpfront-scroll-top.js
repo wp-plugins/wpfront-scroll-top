@@ -47,29 +47,54 @@
             data.button_height += "px";
         container.children("img").css({"width": data.button_width, "height": data.button_height});
 
+        if (data.hide_iframe) {
+            if ($(window).attr("self") !== $(window).attr("top"))
+                return;
+        }
+
         var mouse_over = false;
+        var hideEventID = 0;
+
+        var fnHide = function() {
+            clearTimeout(hideEventID);
+            if (container.is(":visible")) {
+                container.stop().fadeTo(data.button_fade_duration, 0, function() {
+                    container.hide();
+                    mouse_over = false;
+                });
+            }
+        };
+
+        var fnHideEvent = function() {
+            clearTimeout(hideEventID);
+            hideEventID = setTimeout(function() {
+                fnHide();
+            }, data.auto_hide_after * 1000);
+        };
+
         $(window).scroll(function() {
             if ($(this).scrollTop() > data.scroll_offset) {
                 container.stop().css("opacity", 1).show();
-                if (!mouse_over)
+                if (!mouse_over) {
                     container.css("opacity", data.button_opacity);
-            } else {
-                if (container.is(":visible")) {
-                    container.stop().fadeTo(data.button_fade_duration, 0, function() {
-                        container.hide();
-                        mouse_over = false;
-                    });
+                    if (data.auto_hide) {
+                        fnHideEvent();
+                    }
                 }
+            } else {
+                fnHide();
             }
         });
 
         container
                 .hover(function() {
+                    clearTimeout(hideEventID);
                     mouse_over = true;
                     $(this).css("opacity", 1);
                 }, function() {
                     $(this).css("opacity", data.button_opacity);
                     mouse_over = false;
+                    fnHideEvent();
                 })
                 .click(function() {
                     $("html, body").animate({scrollTop: 0}, data.scroll_duration);

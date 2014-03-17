@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPFront Notification Bar\n"
-"POT-Creation-Date: 2014-03-02 10:49-0700\n"
-"PO-Revision-Date: 2014-03-02 10:49-0700\n"
+"POT-Creation-Date: 2014-03-16 22:12-0700\n"
+"PO-Revision-Date: 2014-03-16 22:12-0700\n"
 "Last-Translator: \n"
 "Language-Team: WPFront <contact@wpfront.com>\n"
 "Language: en\n"
@@ -143,7 +143,11 @@ msgstr "Write Review"
 msgid "Contact Me (syam@wpfront.com)"
 msgstr "Contact Me (syam@wpfront.com)"
 
-#: ../classes/base/class-wpfront-base.php:195
+#: ../classes/base/class-wpfront-base.php:180
+msgid "Buy me a Beer or Coffee"
+msgstr "Buy me a Beer or Coffee"
+
+#: ../classes/base/class-wpfront-base.php:197
 msgid "Save Changes"
 msgstr "Save Changes"
 
@@ -168,54 +172,74 @@ msgid "Scroll Duration"
 msgstr "Scroll Duration"
 
 #: ../classes/class-wpfront-scroll-top-options.php:48
+msgid "Auto Hide"
+msgstr "Auto Hide"
+
+#: ../classes/class-wpfront-scroll-top-options.php:49
+msgid "Auto Hide After"
+msgstr "Auto Hide After"
+
+#: ../classes/class-wpfront-scroll-top-options.php:50
 msgid "Hide on Small Devices"
 msgstr "Hide on Small Devices"
 
-#: ../classes/class-wpfront-scroll-top-options.php:49
+#: ../classes/class-wpfront-scroll-top-options.php:51
 msgid "Small Device Max Width"
 msgstr "Small Device Max Width"
 
-#: ../classes/class-wpfront-scroll-top-options.php:50
+#: ../classes/class-wpfront-scroll-top-options.php:52
 msgid "Hide on Small Window"
 msgstr "Hide on Small Window"
 
-#: ../classes/class-wpfront-scroll-top-options.php:51
+#: ../classes/class-wpfront-scroll-top-options.php:53
 msgid "Small Window Max Width"
 msgstr "Small Window Max Width"
 
-#: ../classes/class-wpfront-scroll-top-options.php:52
+#: ../classes/class-wpfront-scroll-top-options.php:54
 msgid "Button Style"
 msgstr "Button Style"
 
-#: ../classes/class-wpfront-scroll-top-options.php:54
-#: ../templates/options-template.php:183
+#: ../classes/class-wpfront-scroll-top-options.php:55
+msgid "Hide on WP-ADMIN"
+msgstr "Hide on WP-ADMIN"
+
+#: ../classes/class-wpfront-scroll-top-options.php:56
+msgid "Hide on iframes"
+msgstr "Hide on iframes"
+
+#: ../classes/class-wpfront-scroll-top-options.php:58
+#: ../templates/options-template.php:218
 msgid "Location"
 msgstr "Location"
 
-#: ../classes/class-wpfront-scroll-top-options.php:55
+#: ../classes/class-wpfront-scroll-top-options.php:59
 msgid "Margin X"
 msgstr "Margin X"
 
-#: ../classes/class-wpfront-scroll-top-options.php:56
+#: ../classes/class-wpfront-scroll-top-options.php:60
 msgid "Margin Y"
 msgstr "Margin Y"
 
-#: ../classes/class-wpfront-scroll-top-options.php:58
-#: ../templates/options-template.php:135
+#: ../classes/class-wpfront-scroll-top-options.php:62
+#: ../templates/options-template.php:170
 msgid "Text"
 msgstr "Text"
 
-#: ../classes/class-wpfront-scroll-top-options.php:59
+#: ../classes/class-wpfront-scroll-top-options.php:63
 msgid "Text Color"
 msgstr "Text Color"
 
-#: ../classes/class-wpfront-scroll-top-options.php:60
+#: ../classes/class-wpfront-scroll-top-options.php:64
 msgid "Background Color"
 msgstr "Background Color"
 
-#: ../classes/class-wpfront-scroll-top-options.php:61
+#: ../classes/class-wpfront-scroll-top-options.php:65
 msgid "Custom CSS"
 msgstr "Custom CSS"
+
+#: ../classes/class-wpfront-scroll-top-options.php:67
+msgid "Display on Pages"
+msgstr "Display on Pages"
 
 #: ../classes/class-wpfront-scroll-top.php:63
 msgid "WPFront Scroll Top"
@@ -224,6 +248,19 @@ msgstr "WPFront Scroll Top"
 #: ../classes/class-wpfront-scroll-top.php:63
 msgid "Scroll Top"
 msgstr "Scroll Top"
+
+#: ../classes/class-wpfront-scroll-top.php:226
+#: ../classes/class-wpfront-scroll-top.php:230
+msgid "[Page]"
+msgstr "[Page]"
+
+#: ../classes/class-wpfront-scroll-top.php:226
+msgid "Home"
+msgstr "Home"
+
+#: ../classes/class-wpfront-scroll-top.php:235
+msgid "[Post]"
+msgstr "[Post]"
 
 #: ../templates/options-template.php:32
 msgid "WPFront Scroll Top Settings"
@@ -253,51 +290,81 @@ msgstr "[Button fade duration in milliseconds.]"
 msgid "[Window scroll duration in milliseconds.]"
 msgstr "[Window scroll duration in milliseconds.]"
 
-#: ../templates/options-template.php:97
+#: ../templates/options-template.php:105
+msgid ""
+"[Button will be auto hidden after this duration in seconds, if enabled.]"
+msgstr ""
+"[Button will be auto hidden after this duration in seconds, if enabled.]"
+
+#: ../templates/options-template.php:114
 msgid "[Button will be hidden on small devices when the width matches.]"
 msgstr "[Button will be hidden on small devices when the width matches.]"
 
-#: ../templates/options-template.php:106
+#: ../templates/options-template.php:123
 msgid "[Button will be hidden on devices with lesser or equal width.]"
 msgstr "[Button will be hidden on devices with lesser or equal width.]"
 
-#: ../templates/options-template.php:115
+#: ../templates/options-template.php:132
 msgid "[Button will be hidden on broswer window when the width matches.]"
 msgstr "[Button will be hidden on broswer window when the width matches.]"
 
-#: ../templates/options-template.php:124
+#: ../templates/options-template.php:141
 msgid "[Button will be hidden on browser window with lesser or equal width.]"
 msgstr "[Button will be hidden on browser window with lesser or equal width.]"
 
-#: ../templates/options-template.php:133 ../templates/options-template.php:218
+#: ../templates/options-template.php:150
+msgid "[Button will be hidden on 'wp-admin'.]"
+msgstr "[Button will be hidden on 'wp-admin'.]"
+
+#: ../templates/options-template.php:159
+msgid "[Button will be hidden on iframes, usually inside popups.]"
+msgstr "[Button will be hidden on iframes, usually inside popups.]"
+
+#: ../templates/options-template.php:168 ../templates/options-template.php:309
 msgid "Image"
 msgstr "Image"
 
-#: ../templates/options-template.php:141
+#: ../templates/options-template.php:176
 msgid "Text Button"
 msgstr "Text Button"
 
-#: ../templates/options-template.php:191
+#: ../templates/options-template.php:226
 msgid "Bottom Right"
 msgstr "Bottom Right"
 
-#: ../templates/options-template.php:192
+#: ../templates/options-template.php:227
 msgid "Bottom Left"
 msgstr "Bottom Left"
 
-#: ../templates/options-template.php:193
+#: ../templates/options-template.php:228
 msgid "Top Right"
 msgstr "Top Right"
 
-#: ../templates/options-template.php:194
+#: ../templates/options-template.php:229
 msgid "Top Left"
 msgstr "Top Left"
 
-#: ../templates/options-template.php:204 ../templates/options-template.php:213
+#: ../templates/options-template.php:239 ../templates/options-template.php:248
 msgid "[Negative value allowed.]"
 msgstr "[Negative value allowed.]"
 
-#: ../templates/options-template.php:234
+#: ../templates/options-template.php:253
+msgid "Filter"
+msgstr "Filter"
+
+#: ../templates/options-template.php:262
+msgid "All pages."
+msgstr "All pages."
+
+#: ../templates/options-template.php:267
+msgid "Include in following pages"
+msgstr "Include in following pages"
+
+#: ../templates/options-template.php:287
+msgid "Exclude in following pages"
+msgstr "Exclude in following pages"
+
+#: ../templates/options-template.php:325
 msgid "Custom URL"
 msgstr "Custom URL"
 
@@ -312,9 +379,6 @@ msgstr "Custom URL"
 
 #~ msgid "Display Close Button"
 #~ msgstr "Display Close Button"
-
-#~ msgid "Auto Close After"
-#~ msgstr "Auto Close After"
 
 #~ msgid "Display Button"
 #~ msgstr "Display Button"
@@ -346,9 +410,6 @@ msgstr "Custom URL"
 #~ msgid "Button Text Color"
 #~ msgstr "Button Text Color"
 
-#~ msgid "Display on Pages"
-#~ msgstr "Display on Pages"
-
 #~ msgid "Display Reopen Button"
 #~ msgstr "Display Reopen Button"
 
@@ -366,15 +427,6 @@ msgstr "Custom URL"
 
 #~ msgid "Notification Bar"
 #~ msgstr "Notification Bar"
-
-#~ msgid "[Page]"
-#~ msgstr "[Page]"
-
-#~ msgid "Home"
-#~ msgstr "Home"
-
-#~ msgid "[Post]"
-#~ msgstr "[Post]"
 
 #~ msgid "Top"
 #~ msgstr "Top"
@@ -422,23 +474,11 @@ msgstr "Custom URL"
 #~ msgid "[Displays a button next to the message.]"
 #~ msgstr "[Displays a button next to the message.]"
 
-#~ msgid "Filter"
-#~ msgstr "Filter"
-
-#~ msgid "All pages."
-#~ msgstr "All pages."
-
 #~ msgid "Only in landing page."
 #~ msgstr "Only in landing page."
 
 #~ msgid "[The first page they visit on your website.]"
 #~ msgstr "[The first page they visit on your website.]"
-
-#~ msgid "Include in following pages"
-#~ msgstr "Include in following pages"
-
-#~ msgid "Exclude in following pages"
-#~ msgstr "Exclude in following pages"
 
 #~ msgid "Color"
 #~ msgstr "Color"

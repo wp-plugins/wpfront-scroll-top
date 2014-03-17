@@ -90,6 +90,23 @@
     </tr>
     <tr>
         <th scope="row">
+            <?php echo $this->options->auto_hide_label(); ?>
+        </th>
+        <td>
+            <input type="checkbox" name="<?php echo $this->options->auto_hide_name(); ?>" <?php echo $this->options->auto_hide() ? "checked" : ""; ?> />
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->auto_hide_after_label(); ?>
+        </th>
+        <td>
+            <input class="seconds" name="<?php echo $this->options->auto_hide_after_name(); ?>" value="<?php echo $this->options->auto_hide_after(); ?>" />sec 
+            <span class="description"><?php echo $this->__('[Button will be auto hidden after this duration in seconds, if enabled.]'); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
             <?php echo $this->options->hide_small_device_label(); ?>
         </th>
         <td>
@@ -122,6 +139,24 @@
         <td>
             <input class="pixels" name="<?php echo $this->options->small_window_width_name(); ?>" value="<?php echo $this->options->small_window_width(); ?>" />px 
             <span class="description"><?php echo $this->__('[Button will be hidden on browser window with lesser or equal width.]'); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->hide_wpadmin_label(); ?>
+        </th>
+        <td>
+            <input type="checkbox" name="<?php echo $this->options->hide_wpadmin_name(); ?>" <?php echo $this->options->hide_wpadmin() ? "checked" : ""; ?> />
+            <span class="description"><?php echo $this->__('[Button will be hidden on \'wp-admin\'.]'); ?></span>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->hide_iframe_label(); ?>
+        </th>
+        <td>
+            <input type="checkbox" name="<?php echo $this->options->hide_iframe_name(); ?>" <?php echo $this->options->hide_iframe() ? "checked" : ""; ?> />
+            <span class="description"><?php echo $this->__('[Button will be hidden on iframes, usually inside popups.]'); ?></span>
         </td>
     </tr>
     <tr>
@@ -215,6 +250,62 @@
     </tr>
 </table>
 
+<h3><?php echo $this->__('Filter'); ?></h3>
+<table class="form-table">
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->display_pages_label(); ?>
+        </th>
+        <td>
+            <label>
+                <input type="radio" name="<?php echo $this->options->display_pages_name(); ?>" value="1" <?php echo $this->options->display_pages() == 1 ? 'checked' : ''; ?> />
+                <span><?php echo $this->__('All pages.'); ?></span>
+            </label>
+            <br />
+            <label>
+                <input type="radio" name="<?php echo $this->options->display_pages_name(); ?>" value="2" <?php echo $this->options->display_pages() == 2 ? 'checked' : ''; ?> />
+                <span><?php echo $this->__('Include in following pages'); ?></span>
+            </label>
+            <div class="pages-selection">
+                <input type="hidden" name="<?php echo $this->options->include_pages_name(); ?>" value="<?php echo $this->options->include_pages(); ?>" />
+                <?php
+                $objects = $this->get_filter_objects();
+                foreach ($objects as $key => $value) {
+                    ?>
+                    <div class="page-div">
+                        <label>
+                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo strpos($this->options->include_pages(), $key) === FALSE ? '' : 'checked'; ?> />
+                            <?php echo $value; ?>
+                        </label>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+            <label>
+                <input type="radio" name="<?php echo $this->options->display_pages_name(); ?>" value="3" <?php echo $this->options->display_pages() == 3 ? 'checked' : ''; ?> />
+                <span><?php echo $this->__('Exclude in following pages'); ?></span>
+            </label>
+            <div class="pages-selection">
+                <input type="hidden" name="<?php echo $this->options->exclude_pages_name(); ?>" value="<?php echo $this->options->exclude_pages(); ?>" />
+                <?php
+                $objects = $this->get_filter_objects();
+                foreach ($objects as $key => $value) {
+                    ?>
+                    <div class="page-div">
+                        <label>
+                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo strpos($this->options->exclude_pages(), $key) === FALSE ? '' : 'checked'; ?> />
+                            <?php echo $value; ?>
+                        </label>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        </td>
+    </tr>
+</table>
+
 <h3><?php echo $this->__('Image'); ?></h3>
 <div class="icons-container">
     <?php
@@ -259,6 +350,15 @@
 
         $('#wpfront-scroll-top-options').find(".color-selector").each(function(i, e) {
             setColorPicker($(e));
+        });
+
+        $('#wpfront-scroll-top-options .pages-selection input[type="checkbox"]').change(function() {
+            var values = [];
+            var div = $(this).parent().parent().parent();
+            div.find('input:checked').each(function(i, e) {
+                values.push($(e).val());
+            });
+            div.children(":first").val(values.join());
         });
 
     })(jQuery);

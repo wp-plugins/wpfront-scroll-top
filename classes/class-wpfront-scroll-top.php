@@ -36,7 +36,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top extends WPFront_Base {
 
         //Constants
-        const VERSION = '1.2';
+        const VERSION = '1.3';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';
         const PLUGIN_SLUG = 'wpfront-scroll-top';
@@ -143,6 +143,9 @@ if (!class_exists('WPFront_Scroll_Top')) {
                     'location' => $this->options->location(),
                     'marginX' => $this->options->marginX(),
                     'marginY' => $this->options->marginY(),
+                    'hide_iframe' => $this->options->hide_iframe(),
+                    'auto_hide' => $this->options->auto_hide(),
+                    'auto_hide_after' => $this->options->auto_hide_after(),
                 )) . ');';
                 echo '</script>';
             }
@@ -151,13 +154,93 @@ if (!class_exists('WPFront_Scroll_Top')) {
         }
 
         private function enabled() {
-            return $this->options->enabled();
+            if (!$this->options->enabled())
+                return FALSE;
+
+            if ($this->options->hide_wpadmin() && is_admin())
+                return FALSE;
+            
+            if(!$this->filter_pages())
+                return FALSE;
+
+            return TRUE;
+        }
+        
+        private function filter_pages() {
+            if(is_admin())
+                return TRUE;
+            
+            switch ($this->options->display_pages()) {
+                case 1:
+                    return TRUE;
+                case 2:
+                case 3:
+                    global $post;
+                    $ID = FALSE;
+                    $type = FALSE;
+                    if (is_home()) {
+                        $ID = 'home';
+                        $type = 1;
+                    } elseif (is_singular()) {
+                        $post_type = get_post_type();
+                        if ($post_type == 'page') {
+                            $ID = $post->ID;
+                            $type = 1;
+                        } elseif ($post_type == 'post') {
+                            $ID = $post->ID;
+                            $type = 2;
+                        }
+                    }
+                    if ($this->options->display_pages() == 2) {
+                        if ($ID !== FALSE && $type !== FALSE) {
+                            if (strpos($this->options->include_pages(), $type . '.' . $ID) === FALSE)
+                                return FALSE;
+                            else
+                                return TRUE;
+                        }
+                        return FALSE;
+                    }
+                    if ($this->options->display_pages() == 3) {
+                        if ($ID !== FALSE && $type !== FALSE) {
+                            if (strpos($this->options->exclude_pages(), $type . '.' . $ID) === FALSE)
+                                return TRUE;
+                            else
+                                return FALSE;
+                        }
+                        return TRUE;
+                    }
+            }
+            
+            return TRUE;
         }
 
         private function image() {
             if ($this->options->image() == 'custom')
                 return $this->options->custom_url();
             return $this->iconsURL . $this->options->image();
+        }
+
+        protected function get_filter_objects() {
+            $objects = array();
+
+            $objects['1.home'] = $this->__('[Page]') . ' ' . $this->__('Home');
+
+            $pages = get_pages();
+            foreach ($pages as $page) {
+                $objects['1.' . $page->ID] = $this->__('[Page]') . ' ' . $page->post_title;
+            }
+
+            $posts = get_posts();
+            foreach ($posts as $post) {
+                $objects['2.' . $post->ID] = $this->__('[Post]') . ' ' . $post->post_title;
+            }
+
+//            $categories = get_categories();
+//            foreach ($categories as $category) {
+//                $objects['3.' . $category->cat_ID] = $this->__('[Category]') . ' ' . $category->cat_name;
+//            }
+
+            return $objects;
         }
 
     }
