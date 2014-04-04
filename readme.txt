@@ -23,6 +23,8 @@ Allows the visitor to easily scroll back to the top of the page, with fully cust
 * Pages/Posts filter.
 * Auto hide.
 
+http://youtu.be/DJ55kwTOerE
+
 Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-settings/) page for detailed option descriptions.
 
 == Installation ==
