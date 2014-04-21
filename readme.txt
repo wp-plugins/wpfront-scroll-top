@@ -3,7 +3,7 @@ Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
