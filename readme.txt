@@ -1,4 +1,4 @@
-﻿=== WPFront Scroll Top ===
+﻿=== WPFront Scroll to Top ===
 Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
@@ -29,7 +29,7 @@ Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-setting
 
 ###WordPress Scroll to Top
 
-This WordPress scroll to top plugin allows your site visitor to easily scroll to top of the page. This scroll to top plugin can use image or text buttons, also allows you to set custom image. Scroll to top button can be set to hide on small screens and devices. Also the scroll to top button can be hidden on iframes, useful on popups. Scroll to top button is also available on ADMIN screens for the site administrators to easily scroll to top of the page.
+This WordPress scroll to top plugin allows your site visitor to easily scroll back to the top of the page. This scroll to top plugin can use image or text buttons, also allows you to set custom image. Scroll to top button can be set to hide on small screens and devices. Also the scroll to top button can be set to hide on iframes, useful on popups. 
 
 == Installation ==
 
