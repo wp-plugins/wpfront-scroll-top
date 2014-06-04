@@ -27,6 +27,10 @@ http://www.youtube.com/watch?v=DJ55kwTOerE
 
 Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-settings/) page for detailed option descriptions.
 
+###WordPress Scroll to Top
+
+This WordPress scroll to top plugin allows your site visitor to easily scroll back to the top of the page. This scroll to top plugin can use image or text buttons, also allows you to set custom image. 
+
 == Installation ==
 
 1. Click Plugins/Add New from the WordPress admin panel
