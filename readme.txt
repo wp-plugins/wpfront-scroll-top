@@ -8,10 +8,10 @@ Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Allows the visitor to easily scroll back to the top of the page.
+Allows the visitor to easily scroll to top of the page.
 
 == Description ==
-Allows the visitor to easily scroll back to the top of the page, with fully customizable options and image.
+Allows the visitor to easily scroll to top of the page, with fully customizable options and image.
 
 ### Features
 * Displays a button when user scrolls down the page.
@@ -29,7 +29,7 @@ Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-setting
 
 ###WordPress Scroll to Top
 
-This WordPress scroll to top plugin allows your site visitor to easily scroll back to the top of the page. This scroll to top plugin can use image or text buttons, also allows you to set custom image. 
+This WordPress scroll to top plugin allows your site visitor to easily scroll back to the top of the page. This scroll to top plugin can use image or text buttons, also allows you to set custom image. Scroll to top button can be set to hide on small screens and devices. Also the scroll to top button can be set to hide on iframes, useful on popups. 
 
 == Installation ==
 
