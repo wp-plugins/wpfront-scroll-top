@@ -1,4 +1,4 @@
-﻿=== WPFront Scroll Top ===
+﻿=== WPFront Scroll Top (Scroll to Top) ===
 Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
