@@ -52,6 +52,7 @@ if (!class_exists('WPFront_Scroll_Top_Options')) {
             $this->addOption('hide_small_window', 'bit', FALSE)->__('Hide on Small Window');
             $this->addOption('small_window_width', 'int', 640, array($this, 'validate_zero_positive'))->__('Small Window Max Width');
             $this->addOption('button_style', 'string', 'image', array($this, 'validate_button_style'))->__('Button Style');
+            $this->addOption('image_alt', 'string', '')->__('Image ALT');
             $this->addOption('hide_wpadmin', 'bit', FALSE)->__('Hide on WP-ADMIN');
             $this->addOption('hide_iframe', 'bit', FALSE)->__('Hide on iframes');
 

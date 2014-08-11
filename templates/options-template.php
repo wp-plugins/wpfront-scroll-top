@@ -171,6 +171,14 @@
             </div>
         </td>
     </tr>
+    <tr>
+        <th scope="row">
+            <?php echo $this->options->image_alt_label(); ?>
+        </th>
+        <td>
+            <input class="altText" name="<?php echo $this->options->image_alt_name(); ?>" value="<?php echo $this->options->image_alt(); ?>" />
+        </td>
+    </tr>
 </table>
 
 <h3><?php echo $this->__('Text Button'); ?></h3>

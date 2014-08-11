@@ -91,7 +91,7 @@ if ($this->options->button_style() == 'text') {
     <?php
 } else {
     ?>
-    <div id="wpfront-scroll-top-container"><img src="<?php echo $this->image(); ?>" /></div>
+    <div id="wpfront-scroll-top-container"><img src="<?php echo $this->image(); ?>" alt="<?php echo $this->options->image_alt(); ?>" /></div>
     <?php
 }
 ?>
