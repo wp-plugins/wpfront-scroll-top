@@ -3,8 +3,8 @@ Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 1.3
+Tested up to: 3.9.2
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -29,6 +29,10 @@ Visit [WPFront Scroll Top Settings](http://wpfront.com/scroll-top-plugin-setting
 
 Visit [WPFront Scroll Top FAQ](http://wpfront.com/scroll-top-plugin-faq/) page for FAQ.
 
+Localization Contributors:
+<li>[Ogi Djuraskovic](http://firstsiteguide.com) (Spanish) </li>
+<li>[Ogi Djuraskovic](http://firstsiteguide.com) (Serbian) </li>
+
 == Installation ==
 
 1. Click Plugins/Add New from the WordPress admin panel
@@ -52,6 +56,10 @@ No one has asked anything yet.
 3. Settings page. 
 
 == Changelog ==
+
+= 1.4 =
+* Image ALT attribute
+* Language translations
 
 = 1.3 =
 * Auto hide
@@ -78,6 +86,9 @@ No one has asked anything yet.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4 =
+* Now you can set alt attribute for image
 
 = 1.3 =
 * Now you can auto hide it
