@@ -36,7 +36,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top extends WPFront_Base {
 
         //Constants
-        const VERSION = '1.4';
+        const VERSION = '1.4.1';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';
         const PLUGIN_SLUG = 'wpfront-scroll-top';
@@ -58,7 +58,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
             $this->iconsURL = $this->pluginURLRoot . 'images/icons/';
 
             add_action('wp_footer', array(&$this, 'write_markup'));
-            add_action('shutdown', array(&$this, 'write_markup'));
+            add_action('shutdown', array(&$this, 'shutdown_callback'));
 
             $this->add_menu($this->__('WPFront Scroll Top'), $this->__('Scroll Top'));
         }
@@ -114,7 +114,26 @@ if (!class_exists('WPFront_Scroll_Top')) {
             $this->options = new WPFront_Scroll_Top_Options(self::OPTION_NAME, self::PLUGIN_SLUG);
         }
 
-        //writes the html and script for the bar
+        public function shutdown_callback() {
+            if ($this->markupLoaded) {
+                return;
+            }
+
+            $headers = headers_list();
+            $flag = FALSE;
+            foreach ($headers as $value) {
+                $value = strtolower(str_replace(' ', '', $value));
+                if (strpos($value, 'content-type:text/html') === 0) {
+                    $flag = TRUE;
+                    break;
+                }
+            }
+
+            if ($flag)
+                $this->write_markup();
+        }
+
+        //writes the html and script for the button
         public function write_markup() {
             if ($this->markupLoaded) {
                 return;
@@ -159,17 +178,17 @@ if (!class_exists('WPFront_Scroll_Top')) {
 
             if ($this->options->hide_wpadmin() && is_admin())
                 return FALSE;
-            
-            if(!$this->filter_pages())
+
+            if (!$this->filter_pages())
                 return FALSE;
 
             return TRUE;
         }
-        
+
         private function filter_pages() {
-            if(is_admin())
+            if (is_admin())
                 return TRUE;
-            
+
             switch ($this->options->display_pages()) {
                 case 1:
                     return TRUE;
@@ -193,7 +212,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
                     }
                     if ($this->options->display_pages() == 2) {
                         if ($ID !== FALSE && $type !== FALSE) {
-                            if (strpos($this->options->include_pages(), $type . '.' . $ID) === FALSE)
+                            if ($this->filter_pages_contains($this->options->include_pages(), $type . '.' . $ID) === FALSE)
                                 return FALSE;
                             else
                                 return TRUE;
@@ -202,7 +221,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
                     }
                     if ($this->options->display_pages() == 3) {
                         if ($ID !== FALSE && $type !== FALSE) {
-                            if (strpos($this->options->exclude_pages(), $type . '.' . $ID) === FALSE)
+                            if ($this->filter_pages_contains($this->options->exclude_pages(), $type . '.' . $ID) === FALSE)
                                 return TRUE;
                             else
                                 return FALSE;
@@ -210,8 +229,12 @@ if (!class_exists('WPFront_Scroll_Top')) {
                         return TRUE;
                     }
             }
-            
+
             return TRUE;
+        }
+
+        public function filter_pages_contains($list, $key) {
+            return strpos(',' . $list . ',', ',' . $key . ',');
         }
 
         private function image() {

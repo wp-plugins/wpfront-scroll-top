@@ -282,7 +282,7 @@
                     ?>
                     <div class="page-div">
                         <label>
-                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo strpos($this->options->include_pages(), $key) === FALSE ? '' : 'checked'; ?> />
+                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo $this->filter_pages_contains($this->options->include_pages(), $key) === FALSE ? '' : 'checked'; ?> />
                             <?php echo $value; ?>
                         </label>
                     </div>
@@ -302,7 +302,7 @@
                     ?>
                     <div class="page-div">
                         <label>
-                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo strpos($this->options->exclude_pages(), $key) === FALSE ? '' : 'checked'; ?> />
+                            <input type="checkbox" value="<?php echo $key; ?>" <?php echo $this->filter_pages_contains($this->options->exclude_pages(), $key) === FALSE ? '' : 'checked'; ?> />
                             <?php echo $value; ?>
                         </label>
                     </div>
