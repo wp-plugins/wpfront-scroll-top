@@ -32,6 +32,7 @@ Visit [WPFront Scroll Top FAQ](http://wpfront.com/scroll-top-plugin-faq/) page f
 Localization Contributors:
 <li>[Ogi Djuraskovic](http://firstsiteguide.com) (Spanish) </li>
 <li>[Ogi Djuraskovic](http://firstsiteguide.com) (Serbian) </li>
+<li>[Flector](http://wordpressplugins.ru) (Russian) </li>
 
 == Installation ==
 
@@ -59,6 +60,7 @@ No one has asked anything yet.
 
 = 1.4.1 =
 * Bug fixes
+* Russian language added
 
 = 1.4 =
 * Image ALT attribute
