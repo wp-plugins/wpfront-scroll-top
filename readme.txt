@@ -3,8 +3,8 @@ Contributors: syammohanm
 Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.4
+Tested up to: 4.0.1
+Stable tag: 1.4.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,6 +32,8 @@ Visit [WPFront Scroll Top FAQ](http://wpfront.com/scroll-top-plugin-faq/) page f
 Localization Contributors:
 <li>[Ogi Djuraskovic](http://firstsiteguide.com) (Spanish) </li>
 <li>[Ogi Djuraskovic](http://firstsiteguide.com) (Serbian) </li>
+<li>[Flector](http://wordpressplugins.ru) (Russian) </li>
+<li>[Rene Wolf](http://fluchtsportler.de) (German) </li>
 
 == Installation ==
 
@@ -56,6 +58,14 @@ No one has asked anything yet.
 3. Settings page. 
 
 == Changelog ==
+
+= 1.4.2 =
+* Bug fixes.
+* German language added.
+
+= 1.4.1 =
+* Bug fixes
+* Russian language added
 
 = 1.4 =
 * Image ALT attribute
@@ -86,6 +96,12 @@ No one has asked anything yet.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4.2 =
+* Bug fixes.
+
+= 1.4.1 =
+* A couple of bug fixes
 
 = 1.4 =
 * Now you can set alt attribute for image
