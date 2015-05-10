@@ -36,7 +36,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
     class WPFront_Scroll_Top extends WPFront_Base {
 
         //Constants
-        const VERSION = '1.4.2';
+        const VERSION = '1.4.3';
         const OPTIONS_GROUP_NAME = 'wpfront-scroll-top-options-group';
         const OPTION_NAME = 'wpfront-scroll-top-options';
         const PLUGIN_SLUG = 'wpfront-scroll-top';
@@ -143,7 +143,7 @@ if (!class_exists('WPFront_Scroll_Top')) {
                 return;
             }
 
-            if (WPFront_Static::doing_ajax()) {
+            if (WPFront_Static_ST::doing_ajax()) {
                 return;
             }
 

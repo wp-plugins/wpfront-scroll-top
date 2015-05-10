@@ -22,7 +22,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-if (!class_exists('WPFront_Static')) {
+if (!class_exists('WPFront_Static_ST')) {
 
     /**
      * Plugin framework static helpers
@@ -30,7 +30,7 @@ if (!class_exists('WPFront_Static')) {
      * @author Syam Mohan <syam@wpfront.com>
      * @copyright 2013 WPFront.com
      */
-    class WPFront_Static {
+    class WPFront_Static_ST {
 
         public static function is_admin_bar_showing() {
             if (function_exists('is_admin_bar_showing')) {
@@ -53,6 +53,10 @@ if (!class_exists('WPFront_Static')) {
             }
 
             if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+                return TRUE;
+            }
+            
+            if (!empty($_SERVER['REQUEST_URI']) && strtolower($_SERVER['REQUEST_URI']) == '/wp-admin/async-upload.php') {
                 return TRUE;
             }
 
