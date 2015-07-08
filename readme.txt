@@ -4,7 +4,7 @@ Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.4.3
+Stable tag: 1.4.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -59,6 +59,9 @@ No one has asked anything yet.
 
 == Changelog ==
 
+= 1.4.4 =
+* Zerif theme compatibility fix.
+
 = 1.4.3 =
 * Media upload bug fix.
 
@@ -100,6 +103,9 @@ No one has asked anything yet.
 
 == Upgrade Notice ==
 
+= 1.4.4 =
+* Compatibility fix.
+
 = 1.4.3 =
 * Bug fix.
 
@@ -132,6 +138,5 @@ No one has asked anything yet.
 
 = 1.0 =
 * Initial release
-
 
 
