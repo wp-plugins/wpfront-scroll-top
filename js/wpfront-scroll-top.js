@@ -10,10 +10,10 @@
  
  */
 
-(function() {
+(function () {
     var $ = jQuery;
 
-    window.wpfront_scroll_top = function(data) {
+    window.wpfront_scroll_top = function (data) {
         var container = $("#wpfront-scroll-top-container").css("opacity", 0);
 
         var css = {};
@@ -55,48 +55,56 @@
         var mouse_over = false;
         var hideEventID = 0;
 
-        var fnHide = function() {
+        var fnHide = function () {
             clearTimeout(hideEventID);
             if (container.is(":visible")) {
-                container.stop().fadeTo(data.button_fade_duration, 0, function() {
+                container.stop().fadeTo(data.button_fade_duration, 0, function () {
                     container.hide();
                     mouse_over = false;
                 });
             }
         };
 
-        var fnHideEvent = function() {
+        var fnHideEvent = function () {
             clearTimeout(hideEventID);
-            hideEventID = setTimeout(function() {
+            hideEventID = setTimeout(function () {
                 fnHide();
             }, data.auto_hide_after * 1000);
         };
 
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > data.scroll_offset) {
-                container.stop().css("opacity", 1).show();
-                if (!mouse_over) {
-                    container.css("opacity", data.button_opacity);
-                    if (data.auto_hide) {
-                        fnHideEvent();
-                    }
+        var scrollHandled = false;
+        var fnScroll = function () {
+            if (scrollHandled)
+                return;
+
+            scrollHandled = true;
+
+            if ($(window).scrollTop() > data.scroll_offset) {
+                container.stop().css("opacity", mouse_over ? 1 : data.button_opacity).show();
+                if (!mouse_over && data.auto_hide) {
+                    fnHideEvent();
                 }
             } else {
                 fnHide();
             }
-        });
+
+            scrollHandled = false;
+        };
+
+        $(window).scroll(fnScroll);
+        $(document).scroll(fnScroll);
 
         container
-                .hover(function() {
+                .hover(function () {
                     clearTimeout(hideEventID);
                     mouse_over = true;
                     $(this).css("opacity", 1);
-                }, function() {
+                }, function () {
                     $(this).css("opacity", data.button_opacity);
                     mouse_over = false;
                     fnHideEvent();
                 })
-                .click(function() {
+                .click(function () {
                     $("html, body").animate({scrollTop: 0}, data.scroll_duration);
                     return false;
                 });

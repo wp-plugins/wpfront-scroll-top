@@ -3,7 +3,7 @@
  * Plugin Name: WPFront Scroll Top
  * Plugin URI: http://wpfront.com/scroll-top-plugin/ 
  * Description: Allows the visitor to easily scroll back to the top of the page.
- * Version: 1.4.3
+ * Version: 1.4.4
  * Author: Syam Mohan
  * Author URI: http://wpfront.com
  * License: GPL v3 
