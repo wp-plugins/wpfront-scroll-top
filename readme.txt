@@ -4,7 +4,7 @@ Donate link: http://wpfront.com/donate/
 Tags: back, back to top, navigation, navigate, page, scroll, scroll to top, scroll top, scroll up, top, up
 Requires at least: 3.0
 Tested up to: 4.3
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,6 +34,7 @@ Localization Contributors:
 <li>[Ogi Djuraskovic](http://firstsiteguide.com) (Serbian) </li>
 <li>[Flector](http://wordpressplugins.ru) (Russian) </li>
 <li>[Rene Wolf](http://fluchtsportler.de) (German) </li>
+<li>[Ivanka Skakun](http://www.coupofy.com/) (Ukrainian) </li>
 
 == Installation ==
 
@@ -58,6 +59,9 @@ No one has asked anything yet.
 3. Settings page. 
 
 == Changelog ==
+
+= 1.4.5 =
+* Ukrainian translation added. Thanks to Ivanka Skakun.
 
 = 1.4.4 =
 * Zerif theme compatibility fix.
@@ -102,6 +106,9 @@ No one has asked anything yet.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4.5 =
+* Language translation added.
 
 = 1.4.4 =
 * Compatibility fix.
